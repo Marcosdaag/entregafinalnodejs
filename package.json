@@ -1,0 +1,29 @@
+{
+  "name": "entregafinalnodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marcosdaag/entregafinalnodejs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marcosdaag/entregafinalnodejs/issues"
+  },
+  "homepage": "https://github.com/Marcosdaag/entregafinalnodejs#readme",
+  "dependencies": {
+    "body-parser": "^2.2.2",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "firebase": "^12.13.0",
+    "jsonwebtoken": "^9.0.3"
+  }
+}
