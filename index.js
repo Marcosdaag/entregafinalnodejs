@@ -5,6 +5,7 @@ import dotenv from "dotenv";
 
 import authRoutes from "./routes/auth.routes.js";
 import productsRoutes from "./routes/products.routes.js";
+import { errorHandler } from "./middlewares/error.middleware.js";
 
 dotenv.config();
 
@@ -24,6 +25,8 @@ app.use("/api", productsRoutes);
 app.use((req, res, next) => {
   res.status(404).json({ message: "Ruta no encontrada (404)" });
 });
+
+app.use(errorHandler);
 
 // Inicio del servidor
 const PORT = process.env.PORT || 3000;
